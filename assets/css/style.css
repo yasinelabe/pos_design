@@ -65,9 +65,13 @@ body{
 }
 
 .footer_part {
-    background-color: rgb(17, 40, 49);
+    background-color: rgb(247, 247, 247);
     grid-column: 1/4;
     grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -112,6 +116,10 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 10px;
     border-radius: 5px;
+}
+.filter_icon:hover{
+    background-color: rgb(221, 93, 7);
+    cursor: pointer;
 }
 .white{
     color:white;
@@ -168,5 +176,15 @@ body{
 .product_price{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(26, 24, 24);
+    color: rgb(221, 93, 7);
+}
+.footer_part div{
+    padding: 10px 40px;
+    background-color: rgb(224, 223, 223);
+    border-radius: 5px;
+}
+.footer_part div:hover{
+    background-color: rgb(221, 93, 7);
+    color: white;
+    cursor: pointer;
 }
