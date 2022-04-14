@@ -63,9 +63,67 @@ body{
     background-color: rgb(255, 255, 255);
     grid-column: 3/4;
 }
+.customer_part{
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:20px;
+    padding:5px;
+}
+.customer_list{
+    padding: 20px;
+    background-color: rgb(219, 219, 219);
+    border:none;
+    width: 80%;
+    font-size: 18px;
+}
 
+.receipt_part{
+    margin-top:20px;
+    background-color: rgb(255, 255, 255);
+
+}
+.receipt_part ul{
+    padding:0;
+}
+.receipt_part ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-top:20px;
+}
+.subtotal,.total,.tax{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+}
+.buttons_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px;
+}
+.receipt_button{
+    background-color: rgb(255, 255, 255);
+    border:none;
+    width: 80%;
+    font-size: 18px;
+    margin-top:30px;
+    border-radius: 0 !important;
+    padding: 20px;
+}
 .footer_part {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(8, 23, 65);
     grid-column: 1/4;
     grid-row: 2/3;
     display: flex;
@@ -87,6 +145,15 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: rgb(26, 24, 24);
+}
+.dash{
+    border: 1px dashed rgb(26, 24, 24);
+
+}
+.dash:hover{
+    border: 1px dashed black;
+    background-color: rgb(221, 93, 7);
+    color:white;
 }
 
 .input{
@@ -129,6 +196,11 @@ body{
 }
 .orange{
     background-color: rgb(221, 93, 7);
+}
+.orange:hover{
+    background-color: white;
+    color: black;
+    border:1px dashed black;
 }
 .category{
     border-radius: 5px;
