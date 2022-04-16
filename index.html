@@ -6,10 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pos simple template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/assets/css/calculator.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
+
+    <div class="modal_shadow" hidden></div>
+    <div class="calculator_modal modal" hidden>
+        <div class="first-row">
+            <input type="text" name="result" class="result calculator_input" id="result" value="" placeholder="Result"
+                readonly />
+            <input type="button" class="calculator_input" value="C" onclick="clearScreen()" id="clear" />
+        </div>
+        <div class="second-row">
+            <input type="button" class="calculator_input" value="1" onclick="liveScreen(1)" id="one" />
+            <input type="button" class="calculator_input" value="2" onclick="liveScreen(2)" id="two" />
+            <input type="button" class="calculator_input" value="3" id="three" onclick="liveScreen(3)" />
+            <input type="button" class="calculator_input" value="+" onclick="liveScreen('+')" />
+        </div>
+        <div class="third-row">
+            <input type="button" class="calculator_input" value="4" id="four" onclick="liveScreen(4)" />
+            <input type="button" class="calculator_input" value="5" id="five" onclick="liveScreen(5)" />
+            <input type="button" class="calculator_input" value="6" id="six" onclick="liveScreen(6)" />
+            <input type="button" class="calculator_input" value="-" onclick="liveScreen('-')" />
+        </div>
+        <div class="fourth-row">
+            <input type="button" class="calculator_input" value="7" id="seven" onclick="liveScreen(7)" />
+            <input type="button" class="calculator_input" value="8" id="eight" onclick="liveScreen(8)" />
+            <input type="button" class="calculator_input" value="9" id="nine" onclick="liveScreen(9)" />
+            <input type="button" class="calculator_input" value="x" onclick="liveScreen('*')" />
+        </div>
+        <div class="fifth-row">
+            <input type="button" class="calculator_input" value="/" onclick="liveScreen('/')" />
+
+            <input type="button" class="calculator_input" value="0" id="zero" onclick="liveScreen(0)" />
+            <input type="button" value="." class="dot calculator_input" onclick="liveScreen('.')" />
+            <input type="button" class="calculator_input" value="=" onclick="result.value = eval(result.value||null)" />
+        </div>
+
+    </div>
 
     <div class="container">
 
@@ -359,7 +396,7 @@
 
 
 
-                           
+
 
 
                         </div>
@@ -370,7 +407,7 @@
                 <div class="cart_part">
                     <div class="box">
                         <div class="customer_part">
-                            
+
                             <select name="" class="customer_list">
                                 <option value="">Option 1</option>
                                 <option value="">Option 2</option>
@@ -426,7 +463,7 @@
                                 <li>
                                     <span class="receipt_product_name">
                                         <!-- random product name -->
-                                        Pizza 
+                                        Pizza
                                     </span>
 
                                     <span class="receipt_qty">
@@ -520,7 +557,7 @@
                 </div>
 
                 <div class="calculator">
-                    <a href="/calculator">
+                    <a href="#">
                         <img height="40" src="/assets/icons/calculator-svgrepo-com.svg" alt="">
                     </a>
                 </div>
@@ -536,6 +573,7 @@
     </div>
 
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/calculator.js"></script>
 </body>
 
 </html>
