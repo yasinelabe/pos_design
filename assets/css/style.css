@@ -51,7 +51,7 @@ body{
 .products_part{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0;
     grid-column: 1/4;
     grid-row: 2/3;
@@ -64,7 +64,7 @@ body{
     grid-column: 3/4;
 }
 .customer_part{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(221, 93, 7);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -74,7 +74,7 @@ body{
 }
 .customer_list{
     padding: 20px;
-    background-color: rgb(219, 219, 219);
+    
     border:none;
     width: 80%;
     font-size: 18px;
@@ -123,7 +123,7 @@ body{
     padding: 20px;
 }
 .footer_part {
-    background-color: rgb(8, 23, 65);
+    background-color: rgb(225, 225, 233);
     grid-column: 1/4;
     grid-row: 2/3;
     display: flex;
@@ -152,7 +152,7 @@ body{
 }
 .dash:hover{
     border: 1px dashed black;
-    background-color: rgb(221, 93, 7);
+    background-color: #6b9bd2;
     color:white;
 }
 
@@ -185,7 +185,7 @@ body{
     border-radius: 5px;
 }
 .filter_icon:hover{
-    background-color: rgb(221, 93, 7);
+    background-color: #6b9bd2;
     cursor: pointer;
 }
 .white{
@@ -211,7 +211,7 @@ body{
     background-color: rgb(255, 255, 255);
 }
 .category:hover{
-    background-color: rgb(221, 93, 7);
+    background-color: #6b9bd2;
     color: white;
     cursor: pointer;
 }
@@ -222,8 +222,14 @@ body{
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.product_card:hover{
+    background-color: #6b9bd2;
+    color: white;
+    cursor: pointer;
+    padding:6px;
 }
 .product_info{
     display: flex;
@@ -232,8 +238,8 @@ body{
     align-items: center;
 }
 .product_image{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
@@ -256,7 +262,26 @@ body{
     border-radius: 5px;
 }
 .footer_part div:hover{
-    background-color: rgb(221, 93, 7);
+    background-color: #6b9bd2;
     color: white;
     cursor: pointer;
+}
+.qty{
+    padding:10px;
+    width: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.receipt_qty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+}
+
+.button .btn:hover{
+    padding: 15px;
 }
