@@ -363,3 +363,12 @@ body{
     color: white;
     cursor: pointer;
 }
+
+.loading_part{
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}

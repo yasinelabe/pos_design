@@ -26,7 +26,9 @@ document.querySelector('.history').addEventListener('click', function (e) {
 
 let products_part = document.querySelector('.products_part');
 // before fetching data from json file we need to show loading animation
-
+products_part.innerHTML = `<div class="loading_part">
+<img src="assets/icons/Full snake.gif" alt="loading">
+</div>`;
 // fetch products from the products.json file
 fetch('../products.json')
     .then(function (response) {
@@ -34,7 +36,7 @@ fetch('../products.json')
     }
     )
     .then(function (data) {
-        console.log(data);
+        products_part.innerHTML = '';
         // loop through the products and add them to the DOM
         data.products.forEach(function (product) {
             // create a new div element
@@ -62,6 +64,7 @@ fetch('../products.json')
                                     </div>
                                 </div>
             `
+            // remove loading animation
             // add the new div to the DOM
             products_part.appendChild(newDiv);
         });
