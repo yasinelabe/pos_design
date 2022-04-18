@@ -24,6 +24,11 @@ document.querySelector('.history').addEventListener('click', function (e) {
     document.querySelector('.history_modal').classList.add('animate__fadeIn', 'animate__fadeOut');
 });
 
+document.querySelector('.circle-user').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('.user-info').classList.toggle('hidden');
+});
+
 let products_part = document.querySelector('.products_part');
 // before fetching data from json file we need to show loading animation
 products_part.innerHTML = `<div class="loading_part">
@@ -73,4 +78,5 @@ fetch('../products.json')
     .catch(function (error) {
         console.log(error);
     });
+
 
