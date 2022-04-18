@@ -358,3 +358,8 @@ body{
     color: white;
     cursor: pointer;
 }
+.history_table tbody tr td:hover{
+    background-color: #6b9bd2;
+    color: white;
+    cursor: pointer;
+}
